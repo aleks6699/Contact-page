@@ -45,6 +45,9 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
 
 img {
   max-width: 100%;
