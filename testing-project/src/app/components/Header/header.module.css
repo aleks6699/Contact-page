@@ -8,6 +8,12 @@
   align-items: center;
   padding: 31px 0;
 }
+.container_header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: background-color 0.3s ease-in-out; /* плавный переход для фона */
+}
 
 .header_logo {
   font-weight: 800;
@@ -20,6 +26,7 @@
   color: var(--gray-dark);
   transform: scale(1.1);
 }
+
 .header_inner_right {
   display: flex;
   justify-content: space-between;
@@ -38,7 +45,7 @@
   margin-left: 60px;
   padding-right: 7px;
 }
-.arrow {
+.header_arrow {
   margin-left: 6px;
   transform: translate(25%);
 }
@@ -59,7 +66,7 @@
   border: 1px solid var(--black);
   top: 0;
   right: 0;
-  transform: translate(22%, -20%);
+  transform: translate(25%, -25%);
 }
 
 .cart:hover,
@@ -77,4 +84,102 @@
   color: var(--black);
 }
 
+/* Стили для бургер-меню */
+.burger_menu {
+  display: none;
+  cursor: pointer;
+}
+.burger_item {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: var(--black);
+  border-top-left-radius: 20px;
+  margin-bottom: 3px;
+  border-bottom-left-radius: 20;
+}
 
+.burger_item:last-child {
+  margin-bottom: 0;
+  width: 9px;
+  margin-left: auto;
+}
+
+.container_header.active .burger_item:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+  background-color: var(--white);
+}
+
+.container_header.active .burger_item:nth-child(2) {
+  display: none;
+}
+
+.container_header.active .burger_item:nth-child(3) {
+  transform: translateY(1px) rotate(-45deg);
+  background-color: var(--white);
+  width: 18px;
+}
+
+
+@media screen and (max-width: 838px) {
+  .burger_menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 34px;
+  }
+
+  .container_header.active {
+    position: relative;
+    background-color: var(--black);
+  }
+
+  .header_inner_right {
+    display: none;
+  }
+  .container_header.active .header_inner_right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container_header.active .header_logo {
+    color: var(--white);
+    margin-right: auto;
+  }
+  .container_header.active .header_item,
+  .header_list,
+  .cart,
+  .profile {
+    color: var(--white);
+  }
+  .header_inner {
+    padding: 21px 0;
+  }
+
+  .container_header.active .header_inner {
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .header_nav {
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .header_list {
+    display: flex;
+    flex-direction: column;
+    gap: 29.5px;
+    margin-bottom: 20px;
+  }
+  .cart::after,
+  .profile::after {
+    border: 1px solid var(--white);
+  }
+  .header_buttons {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 33px;
+    padding-right: 0;
+  }
+}
