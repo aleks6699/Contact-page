@@ -12,9 +12,10 @@ export const Footer = () => {
         <FooterReachUs />
         <FooterLinks title="Company" links={companyLinks} />
         <FooterLinks title="Legal" links={legalLinks} />
-        <FooterLinks title="Quick Links" links={quickLinks} />
+        <FooterLinks title="Quick_Links" links={quickLinks} />
         <FooterNewsletter />
       </div>
     </footer>
   );
 };
+                                
