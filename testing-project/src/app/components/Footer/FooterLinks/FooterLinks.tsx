@@ -7,14 +7,16 @@ interface FooterLinksProps {
 }
 
 const FooterLinks = ({ title, links }: FooterLinksProps) => {
+  const formattedTitle = title.toLowerCase().replace(/\s+/g, "_");
+
   return (
-    <div className={styles[`footer_${title.toLowerCase()}_inner`]}>
-      <h3 className={styles[`footer_${title.toLowerCase()}_title`]}>{title}</h3>
-      <ul className={styles[`footer_${title.toLowerCase()}_list`]}>
+    <div className={styles[`footer_${formattedTitle}_inner`]}>
+      <h3 className={styles[`footer_${formattedTitle}_title`]}>{title}</h3>
+      <ul className={styles[`footer_${formattedTitle}_list`]}>
         {links.map((link, index) => (
           <li
             key={index}
-            className={styles[`footer_${title.toLowerCase()}_item`]}
+            className={styles[`footer_${formattedTitle}_item`]}
           >
             <Link href={link.href}>{link.text}</Link>
           </li>
