@@ -142,6 +142,6 @@
     margin: 30px auto 0;
   }
   .footer_reach_us_list a {
-    align-items: start;
+    align-items: flex-start;
   }
 }
