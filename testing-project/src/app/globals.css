@@ -1,0 +1,55 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray-light: #e0e0e0;
+  --gray-medium-light: #c9c9c9;
+  --gray-medium: #8d8d8d;
+  --gray-medium-dark: #717171;
+  --gray-dark: #616161;
+  --gray-darker: #484848;
+  --background-lightest: #fbfbfb;
+  --background-light: #1f1f1f;
+  --background-medium: #1e1e1e;
+  --background-dark: #1a1a1a;
+  --background-darker: #1b1b1b;
+  --background-darkest: #131313;
+  --text-muted: #848484;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var(--background-lightest);
+  height: 100vh;
+ 
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
