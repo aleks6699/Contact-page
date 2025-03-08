@@ -157,7 +157,7 @@
     height: 476px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content:flex-start;
   }
   .header_nav {
     margin-right: auto;
