@@ -1,5 +1,5 @@
-import ContactInformationItem from "./InformationItem";
-import SocialLink from "./SocialLink";
+import ContactInformationItem from "./ContactInformation/InformationItem";
+import SocialLink from "./ContactInformation/SocialLink";
 import { IconsTwitter, IconsInstagram, IconsDiscord } from "../Icons/Icons";
 import styles from "../../contact/page.module.css";
 

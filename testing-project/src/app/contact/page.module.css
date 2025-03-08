@@ -75,7 +75,7 @@
   font-weight: 400;
   font-size: clamp(12px, 3vw, 16px);
   color: var(--white);
-  max-width: 300px;
+  max-width: 303px;
 }
 
 .contact_social {

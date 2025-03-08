@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../contact/page.module.css";
+import styles from "../../../contact/page.module.css";
 interface ContactInformationItemProps {
   href: string;
   iconSrc: string;

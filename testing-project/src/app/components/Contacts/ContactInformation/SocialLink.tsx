@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../../contact/page.module.css";
+import styles from "../../../contact/page.module.css";
 
 const SocialLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   return (
