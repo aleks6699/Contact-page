@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+## Deploy
+
+<https://contact-page-alex.vercel.app/contact>
+
+
 First, run the development server:
 
 ```bash
