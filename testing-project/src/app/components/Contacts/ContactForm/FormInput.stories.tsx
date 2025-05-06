@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import FormInput from "./FormImput";
 
-
 const meta = {
   title: "Components/ContactForm/FormInput ",
   component: FormInput,
@@ -16,18 +15,18 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const Name: Story = {
   args: {
-  id:"name",
-name:"First Name",
-type:"text",
-placeholder:"Alex",
-required: true,
+    id: "name",
+    name: "First Name",
+    type: "text",
+    placeholder: "Alex",
+    required: true,
   },
   parameters: {
     chromatic: { disableSnapshot: false },
   },
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: "1200px", margin: "0 auto",  padding: "20px" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px" }}>
         <Story />
       </div>
     ),
@@ -35,10 +34,10 @@ required: true,
 };
 export const Surname: Story = {
   args: {
-    id:"surname",
-    name:"Last Name",
-    type:"text",
-    placeholder:"Alex",
+    id: "surname",
+    name: "Last Name",
+    type: "text",
+    placeholder: "Alex",
     required: true,
   },
   parameters: {
@@ -46,7 +45,7 @@ export const Surname: Story = {
   },
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: "1200px", margin: "0 auto",  padding: "20px" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px" }}>
         <Story />
       </div>
     ),
@@ -54,10 +53,10 @@ export const Surname: Story = {
 };
 export const Email: Story = {
   args: {
-    id:"email",
-    name:"Email",
-    type:"email",
-    placeholder:"aleks@gmail.com",
+    id: "email",
+    name: "Email",
+    type: "email",
+    placeholder: "aleks@gmail.com",
     required: true,
   },
   parameters: {
@@ -65,7 +64,7 @@ export const Email: Story = {
   },
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: "1200px", margin: "0 auto",  padding: "20px" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px" }}>
         <Story />
       </div>
     ),
@@ -73,10 +72,10 @@ export const Email: Story = {
 };
 export const Phone: Story = {
   args: {
-    id:"tel",
-    name:"Phone Number",
-    type:"tel",
-    placeholder:"+33353455555553",
+    id: "tel",
+    name: "Phone Number",
+    type: "tel",
+    placeholder: "+33353455555553",
     required: true,
   },
   parameters: {
@@ -84,11 +83,9 @@ export const Phone: Story = {
   },
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: "1200px", margin: "0 auto",  padding: "20px" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px" }}>
         <Story />
       </div>
     ),
   ],
 };
-  
-
